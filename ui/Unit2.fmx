@@ -1,0 +1,158 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  ClientHeight = 327
+  ClientWidth = 471
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelName: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.WordWrap = False
+    Text = 'Name:'
+    TabOrder = 1
+  end
+  object LabelCost: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Cost:'
+    TabOrder = 2
+  end
+  object LabelOwner: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Owner:'
+    TabOrder = 3
+  end
+  object LabelMortgaged: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 121.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Mortgaged:'
+    TabOrder = 4
+  end
+  object LabelRent: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 83.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Rent: 0, 1H, 2H, 3H, 4H, Hotel'
+    TabOrder = 5
+  end
+  object LabelMCost: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 102.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Mortgage const:'
+    TabOrder = 6
+  end
+  object ButtonBuy: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 174.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Buy'
+    OnClick = ButtonBuyClick
+  end
+  object ButtonSell: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 174.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Sell'
+    OnClick = ButtonSellClick
+  end
+  object ButtonMortgage: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 209.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Mortgage'
+    OnClick = ButtonMortgageClick
+  end
+  object ButtonUnmortgage: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 209.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Unmortgage'
+    OnClick = ButtonUnmortgageClick
+  end
+  object ButtonReturn: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 284.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Return to Game'
+    OnClick = ButtonReturnClick
+  end
+  object ButtonBuyHouse: TButton
+    Position.X = 263.000000000000000000
+    Position.Y = 245.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Buy House'
+    OnClick = ButtonBuyHouseClick
+  end
+  object ButtonSellHouse: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 245.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Sell House'
+    OnClick = ButtonSellHouseClick
+  end
+end

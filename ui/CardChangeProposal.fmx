@@ -1,0 +1,78 @@
+object CardChangeProposalForm: TCardChangeProposalForm
+  Left = 0
+  Top = 0
+  ClientHeight = 414
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ProposalOnePanel: TPanel
+    Size.Width = 600.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object ProposalTwoPanel: TPanel
+    Position.Y = 150.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object lblProposalOne: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 20.000000000000000000
+    Position.Y = 106.000000000000000000
+    Size.Width = 560.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 32.000000000000000000
+    Text = 'Proposal One'
+    TabOrder = 0
+  end
+  object lblProposalTwo: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 20.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 560.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 32.000000000000000000
+    Text = 'Proposal Two'
+    TabOrder = 1
+  end
+  object btnProposalOne: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Proposal One'
+    OnClick = btnProposalClick
+  end
+  object btnProposalTwo: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Proposal Two'
+    OnClick = btnProposalClick
+  end
+  object btnCancel: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Cancel'
+    OnClick = btnCancelClick
+  end
+end
